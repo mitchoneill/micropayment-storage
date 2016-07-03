@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Storage for Micropayments</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<div class="container font">
+  <h2>Storage for Micropayments</h2>
+  <div class="subtitle">
+    <p>Store your files in the cloud<sup>1</sup> by paying microtransactions for reads and writes.
+    <div class="subtext"><sup>1</sup>dinky single server that could fail at any moment -- please don't store anything important here</div></p>
+    Based on the <a href="https://21.co/learn/grid-computing-with-bitcoin-micropayments/">
+      21.co grid computing tutorial</a> and powered by the <a href="https://github.com/21dotco/two1-python">two1-python library</a>
+  </div>
+  <div class="spacer"></div>
+  <div class="feature">
+    <h3>Pricing</h3>
+    <div class="featureBlock">
+    Read: <br>
+    {{ read_price }} Satoshi/byte
+    </div>
+
+    <div class="featureBlock">
+      Write: <br>
+      {{ write_price}} Satoshi/byte
+    </div>
+  </div>
+
+  <div class="feature">
+    <h3>Current Storage</h3>
+      <div class="featureBlock">
+        Total Stored: <br>
+        {{ size }} bytes
+      </div>
+      <div class="featureBlock">
+        Files: <br>
+        {{ files }}
+      </div>
+      <div class="featureBlock">
+        Directories: <br>
+        {{ directories  }}
+      </div>
+    </div>
+  <div class="spacer"></div>
+  <h2>Quickstart</h2>
+  Will flesh this out, but for now:<br>
+  <div class="feature">
+    <h3>Directory Explorer</h3>
+    GET /files/?op=readdir
+  </div>
+  <div class="feature">
+    <h3>Reading & Writing</h3>
+    Read <a href="https://21.co/learn/grid-computing-with-bitcoin-micropayments/">this</a>
+  </div>
+</div>
+</body>
+</html>

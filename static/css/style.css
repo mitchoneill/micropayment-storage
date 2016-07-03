@@ -1,0 +1,35 @@
+.container {
+  text-align: center;
+}
+
+.font {
+  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+}
+
+.subtitle {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.subtext {
+  margin-top: -15px;
+  font-size: 12px;
+}
+
+.featureBlock {
+  display: inline-block;
+  padding: 0 10px 0 10px;
+}
+
+.feature {
+  border: solid 1px black;
+  width: 300px;
+  margin: 10px 10px 10px 10px;
+  padding-bottom: 20px;
+  display: inline-block;
+
+}
+
+.spacer {
+  height: 20px;
+}
